@@ -32,8 +32,7 @@ app.post("/sendForm", async (req, res) => {
   db.connect();
   await db.query("INSERT INTO form (name, email, message, date) VALUES ($1, $2, $3, $4)", [name, email, message, date]);
   db.end();
-  isSend = true;
-  res.render("index.ejs", { send: isSend });
+  res.render("index.ejs");
 });
 
 app.listen(port, (req, res) => {
