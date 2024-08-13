@@ -11,10 +11,10 @@ const app = express();
 const port = 3000;
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "portfolio",
-  password: "12345678",
+  user: "azril",
+  host: "dpg-cqtmbpij1k6c738p6rsg-a",
+  database: "portfolio_db_4dz7",
+  password: "OUW21SPus4JzWmg1IAv3fbqKK2YsxNbZ",
   port: 5432,
 });
 
